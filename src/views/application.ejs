@@ -1,0 +1,79 @@
+<%- include('partials/header') -%>
+<%- include('partials/nav') -%>  
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li>Bewerbungen</li>
+        </ol>
+        <h2>Teamler</h2>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Kontaktformular ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Bewerbung zum Teamler</h2>
+          <p>Teamler bringen RexArmy weiter. Sie unterhalten Member beispielsweise mit Minispielen, entwickeln unsere Systeme weiter oder moderieren unsere Chaträume. </p>
+        </div>
+
+    
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="https://formspree.io/f/xeqpbjky" method="POST" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="Name" class="form-control" id="name" placeholder="Dein Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="Email" id="email" placeholder="Deine Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                    <select name="Stelle" id="stelle-choose" style="background-color:#23272A;border: 1px solid #fff;">
+                      <option selected="selected" value="Developer" disabled>Wähle deine Tätigkeit</option>
+                      <option value="Developer" style="#fff">Developer</option>
+                      <option value="Supporter">Supporter</option>
+                      <option value="Content">Content</option>
+
+                    </select>
+              </div>
+
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="Erzähle etwas über dich, was sind deine Stärken und Schwächen?" rows="5" placeholder="Erzähle etwas über dich, was sind deine Stärken und Schwächen?" required></textarea>
+              </div>
+
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="Warum bist du der richtige für diese Stelle?" rows="5" placeholder="Warum bist du der richtige für diese Stelle?" required></textarea>
+              </div>
+
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="Was willst du uns sonst noch sagen?" rows="5" placeholder="Was willst du uns sonst noch sagen?"></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Laden</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Deine Bewerbung wurde versandt!</div>
+              </div>
+              <div class="text-center"><button type="submit">Bewerbung abschicken</button></div>
+              <center><p class="pn">Es gelten unsere <a href="/datenschutz">Datenschutzbestimmungen</a>.</p></center>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+<%- include('partials/footer') -%>  

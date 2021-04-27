@@ -1,0 +1,60 @@
+<%- include('partials/header') -%>
+<%- include('partials/nav') -%>  
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li>RA Members</li>
+        </ol>
+        <h2>Kanäle</h2>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <section class="inner-page">
+      <div class="container">
+       
+        <h2><strong>Übersicht</strong></h2>
+        <p class="mb-1">Hier sind alle Kanäle von <span style="color: #00aeff;">📡<b>RA Members</b></span> aufgelistet!</p>
+
+          <table id="countit" class="channelstats">
+            <tr class="statstitle">
+              <th>Kanalname</th>
+              <th>Abos</th>
+              <th>Aufrufe</th>
+            </tr>
+            <tr onclick="window.location='https://www.youtube.com/channel/UCQmuxJXLoovdUOQcaQnyFTA'">
+              <td>Rexy</td>
+              <td id="subsRexy" class="sub-count"></td>
+              <td id="viewsRexy" class="view-count"></td>
+            </tr>
+            
+            <tr onclick="window.location='https://www.youtube.com/channel/UCjIZhReMAlMj1xmquhvFyPA'">
+              <td>MindLab</td>
+              <td id="subsML" class="sub-count"></td>
+              <td id="viewsML" class="view-count"></td>
+            </tr>
+
+            <tr onclick="window.location='https://www.youtube.com/channel/UCD2X1NPG9Ti1b5rxBuL3qmQ'">
+              <td>TentaBro</td>
+              <td id="subsToxy" class="sub-count"></td>
+              <td id="viewsToxy" class="view-count"></td>
+            </tr>
+            <tr class="total">
+              <th>Total</th>
+              <th id="totalSubs" ></th>
+              <th id="totalViews" ></th>
+            </tr>
+          </table>
+
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+<%- include('partials/footer') -%>
